@@ -12,7 +12,9 @@
 
 <title>NaraHoteis — Análise de Dados</title>
 
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -24,7 +26,20 @@ body {
     margin: 0;
     background: #F1F5F9;
     color: #1E293B;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6,
+.capa-tag,
+.painel-tag,
+.questao-numero,
+.indicador-titulo,
+.indicador-valor,
+.resultado-titulo,
+.painel-card-numero {
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+    font-weight: 700;
 }
 
 .relatorio {
@@ -77,6 +92,14 @@ body {
     font-size: 16px;
     max-width: 700px;
     line-height: 1.7;
+}
+
+.capa-autores {
+    margin-top: 22px;
+    font-size: 14px;
+    opacity: .85;
+    font-weight: 700;
+    letter-spacing: .5px;
 }
 
 .introducao,
@@ -373,6 +396,10 @@ body {
         <p>
             Tratamento dos dados • Análise estatística •
             Indicadores operacionais • Desempenho financeiro
+        </p>
+
+        <p class="capa-autores">
+            Daniel de Carvalho Nunes • Karoline Duffrayer
         </p>
 
     </div>
