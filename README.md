@@ -1,1 +1,1 @@
-# Nara-Hotis
+# NaraHoteis

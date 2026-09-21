@@ -1,0 +1,322 @@
+﻿id_cliente,nome,cidade_origem,estado_origem,faixa_etaria,tipo_cliente
+1,Otavio Reis,São Paulo,SP,18-25,Pessoa jurídica
+2,Larissa Sousa,Curitiba,PR,18-25,Pessoa física
+3,Tatiana Coelho,Rio de Janeiro,RJ,65+,Pessoa jurídica
+4,Wilson Duarte,Brasília,DF,26-35,Pessoa jurídica
+5,Gabriela Lima,Rio de Janeiro,RJ,46-55,Pessoa física
+6,Ulisses Brito,Brasília,DF,56-65,Pessoa física
+7,Kleber Pires,São Paulo,SP,65+,Pessoa física
+8,Olivia Freitas,Brasília,DF,18-25,Pessoa jurídica
+9,Wesley Araujo,Belo Horizonte,MG,Não informado,Pessoa jurídica
+10,Ivan Azevedo,Curitiba,PR,26-35,Pessoa física
+11,Roberta Leite,São Paulo,SP,18-25,Pessoa física
+12,Nicolas Cunha,Fortaleza,CE,65+,Pessoa jurídica
+13,João Pereira,Recife,PE,26-35,Pessoa física
+14,Larissa Sousa,Rio de Janeiro,RJ,36-45,Pessoa física
+15,  Henrique Rocha ,Recife,PE,Não informado,Pessoa física
+16,Marcos Andrade,São Paulo,SP,Não informado,Pessoa jurídica
+17,Roberta Leite,Salvador,BA,36-45,Pessoa jurídica
+18,Gustavo Vieira,Curitiba,PR,26-35,Pessoa física
+19,João Pereira,Brasília,DF,26-35,Pessoa física
+20,Thiago Matos  ,Fortaleza,CE,Não informado,Pessoa física
+21,Elena Santos,Salvador,BA,56-65,Pessoa física
+22,Helena Borges,Curitiba,PR,56-65,Pessoa jurídica
+23,Tatiana Coelho,Curitiba,PR,46-55,Pessoa jurídica
+24,Elena Santos,Rio de Janeiro,RJ,18-25,Pessoa física
+25,Olivia Freitas,Curitiba,PR,18-25,Pessoa jurídica
+26,Ivan Azevedo,São Paulo,SP,65+,Pessoa jurídica
+27,Gabriela Lima,São Paulo,SP,46-55,Pessoa jurídica
+28,Diego Ferreira,Fortaleza,CE,65+,Pessoa jurídica
+29,Isabela Martins,São Paulo,SP,Não informado,Pessoa jurídica
+30,  Diego Ferreira ,Belo Horizonte,MG,56-65,Pessoa física
+31,Abel Correia,Rio de Janeiro,RJ,46-55,Pessoa física
+32,Yuri Castro,Fortaleza,CE,46-55,Pessoa jurídica
+33,João Pereira,Brasília,DF,36-45,Pessoa física
+34,Diego Ferreira,São Paulo,SP,56-65,Pessoa jurídica
+35,Lucas Souza,Curitiba,PR,56-65,Pessoa física
+36,Larissa Sousa,Salvador,BA,18-25,Pessoa física
+37,Nicolas Cunha,Salvador,BA,65+,Pessoa jurídica
+38,Daniela Ramos,São Paulo,SP,18-25,Pessoa física
+39,Ivan Azevedo,Curitiba,PR,Não informado,Pessoa jurídica
+40,Xuxa Farias  ,Rio de Janeiro,RJ,26-35,Pessoa jurídica
+41,Quincy Braga,Salvador,BA,56-65,Pessoa jurídica
+42,Henrique Rocha,Curitiba,PR,65+,Pessoa física
+43,Roberta Leite,Recife,PE,Não informado,Pessoa jurídica
+44,Rafael Cardoso,Fortaleza,CE,18-25,Pessoa jurídica
+45,  Julia Monteiro ,Belo Horizonte,MG,46-55,Pessoa física
+46,Ivan Azevedo,Rio de Janeiro,RJ,36-45,Pessoa física
+47,Wesley Araujo,Recife,PE,65+,Pessoa física
+48,Natalia Campos,Recife,PE,26-35,Pessoa física
+49,Bruno Costa,Curitiba,PR,65+,Pessoa jurídica
+50,Rafael Cardoso,Curitiba,PR,65+,Pessoa física
+51,Daniela Ramos,Salvador,BA,36-45,Pessoa física
+52,Elena Santos,Brasília,DF,36-45,Pessoa jurídica
+53,Bruno Costa,Recife,PE,Não informado,Pessoa física
+54,Wesley Araujo,Curitiba,PR,36-45,Pessoa jurídica
+55,Quezia Nunes,Curitiba,PR,65+,Pessoa jurídica
+56,Xuxa Farias,Salvador,BA,18-25,Pessoa jurídica
+57,Gustavo Vieira,Curitiba,PR,65+,Pessoa jurídica
+58,Abel Correia,Rio de Janeiro,RJ,46-55,Pessoa física
+59,Thiago Matos,Fortaleza,CE,26-35,Pessoa jurídica
+60,  Carlos Neto ,São Paulo,SP,26-35,Pessoa jurídica
+61,Sara Teixeira,Salvador,BA,65+,Pessoa jurídica
+62,Olivia Freitas,São Paulo,SP,26-35,Pessoa física
+63,Daniela Ramos,Belo Horizonte,MG,65+,Pessoa física
+64,Patricia Vaz,Fortaleza,CE,18-25,Pessoa física
+65,Diego Ferreira,Brasília,DF,26-35,Pessoa física
+66,Wilson Duarte,Fortaleza,CE,56-65,Pessoa jurídica
+67,Carlos Neto,Salvador,BA,26-35,Pessoa jurídica
+68,Carlos Neto,São Paulo,SP,65+,Pessoa jurídica
+69,Isabela Martins,Recife,PE,Não informado,Pessoa jurídica
+70,Victor Gomes,Rio de Janeiro,RJ,46-55,Pessoa jurídica
+71,Wilson Duarte,Recife,PE,46-55,Pessoa jurídica
+72,Ivan Azevedo,Recife,PE,65+,Pessoa física
+73,Victor Gomes,Rio de Janeiro,RJ,65+,Pessoa jurídica
+74,Zara Moraes,Belo Horizonte,MG,56-65,Pessoa física
+75,  Diego Ferreira ,Recife,PE,46-55,Pessoa jurídica
+76,Rafael Cardoso,Rio de Janeiro,RJ,46-55,Pessoa jurídica
+77,Wesley Araujo,Curitiba,PR,65+,Pessoa física
+78,Marina Barbosa,Curitiba,PR,18-25,Pessoa física
+79,Daniela Ramos,São Paulo,SP,36-45,Pessoa jurídica
+80,Ximena Godoi  ,Recife,PE,26-35,Pessoa jurídica
+81,Zara Moraes,Salvador,BA,26-35,Pessoa física
+82,Roberta Leite,Brasília,DF,18-25,Pessoa física
+83,Ana Silva,Fortaleza,CE,46-55,Pessoa jurídica
+84,Tatiana Coelho,Fortaleza,CE,46-55,Pessoa física
+85,Daniela Ramos,Salvador,BA,65+,Pessoa jurídica
+86,Carlos Neto,Fortaleza,CE,46-55,Pessoa jurídica
+87,Nicolas Cunha,Rio de Janeiro,RJ,36-45,Pessoa jurídica
+88,Helena Borges,Fortaleza,CE,18-25,Pessoa física
+89,Patricia Vaz,Curitiba,PR,46-55,Pessoa jurídica
+90,  Thiago Matos ,Brasília,DF,56-65,Pessoa jurídica
+91,Wesley Araujo,Brasília,DF,46-55,Pessoa jurídica
+92,Henrique Rocha,Salvador,BA,56-65,Pessoa física
+93,Gabriela Lima,Belo Horizonte,MG,Não informado,Pessoa jurídica
+94,Rafael Cardoso,Fortaleza,CE,18-25,Pessoa jurídica
+95,Gabriela Lima,Rio de Janeiro,RJ,18-25,Pessoa jurídica
+96,Quezia Nunes,Rio de Janeiro,RJ,Não informado,Pessoa física
+97,João Pereira,Recife,PE,56-65,Pessoa jurídica
+98,Marcos Andrade,Salvador,BA,56-65,Pessoa física
+99,Larissa Sousa,Curitiba,PR,36-45,Pessoa física
+100,Otavio Reis  ,Rio de Janeiro,RJ,Não informado,Pessoa física
+101,Abel Correia,Fortaleza,CE,65+,Pessoa jurídica
+102,Elena Santos,Curitiba,PR,26-35,Pessoa jurídica
+103,Beatriz Dias,São Paulo,SP,56-65,Pessoa física
+104,Diego Ferreira,Recife,PE,36-45,Pessoa jurídica
+105,  Rafael Cardoso ,Brasília,DF,56-65,Pessoa jurídica
+106,Marcos Andrade,Rio de Janeiro,RJ,18-25,Pessoa física
+107,Wilson Duarte,Fortaleza,CE,36-45,Pessoa física
+108,Rafael Cardoso,Brasília,DF,Não informado,Pessoa jurídica
+109,Abel Correia,Salvador,BA,36-45,Pessoa física
+110,Quincy Braga,Recife,PE,56-65,Pessoa física
+111,Gustavo Vieira,Fortaleza,CE,18-25,Pessoa jurídica
+112,Otavio Reis,Fortaleza,CE,18-25,Pessoa física
+113,Henrique Rocha,Recife,PE,Não informado,Pessoa física
+114,Felipe Oliveira,Salvador,BA,18-25,Pessoa jurídica
+115,Gustavo Vieira,Belo Horizonte,MG,36-45,Pessoa jurídica
+116,Yuri Castro,Recife,PE,56-65,Pessoa física
+117,Victor Gomes,Fortaleza,CE,56-65,Pessoa jurídica
+118,João Pereira,Fortaleza,CE,56-65,Pessoa jurídica
+119,Ursula Pinto,Rio de Janeiro,RJ,26-35,Pessoa física
+120,  Ursula Pinto ,Belo Horizonte,MG,46-55,Pessoa jurídica
+121,Fernanda Cruz,Fortaleza,CE,26-35,Pessoa jurídica
+122,Ana Silva,Salvador,BA,Não informado,Pessoa jurídica
+123,Victor Gomes,Recife,PE,65+,Pessoa jurídica
+124,Ursula Pinto,Salvador,BA,Não informado,Pessoa jurídica
+125,Olivia Freitas,São Paulo,SP,18-25,Pessoa jurídica
+126,Carlos Neto,Salvador,BA,65+,Pessoa jurídica
+127,Wesley Araujo,Belo Horizonte,MG,46-55,Pessoa física
+128,Karen Alves,Belo Horizonte,MG,18-25,Pessoa jurídica
+129,Olivia Freitas,Fortaleza,CE,65+,Pessoa jurídica
+130,Sara Teixeira,Salvador,BA,56-65,Pessoa física
+131,Otavio Reis,Fortaleza,CE,65+,Pessoa jurídica
+132,Gabriela Lima,Recife,PE,46-55,Pessoa jurídica
+133,Rafael Cardoso,Salvador,BA,56-65,Pessoa física
+134,Ximena Godoi,Belo Horizonte,MG,26-35,Pessoa jurídica
+135,  Otavio Reis ,Belo Horizonte,MG,65+,Pessoa física
+136,Felipe Oliveira,Brasília,DF,36-45,Pessoa jurídica
+137,Helena Borges,Salvador,BA,36-45,Pessoa física
+138,Vanessa Cavalcanti,Curitiba,PR,36-45,Pessoa física
+139,Roberta Leite,Recife,PE,65+,Pessoa jurídica
+140,Ana Silva  ,Recife,PE,56-65,Pessoa física
+141,Otavio Reis,Brasília,DF,18-25,Pessoa física
+142,Natalia Campos,Recife,PE,65+,Pessoa física
+143,Henrique Rocha,Belo Horizonte,MG,Não informado,Pessoa física
+144,Yuri Castro,São Paulo,SP,36-45,Pessoa jurídica
+145,Fernanda Cruz,Curitiba,PR,46-55,Pessoa jurídica
+146,Xuxa Farias,Recife,PE,65+,Pessoa jurídica
+147,Rafael Cardoso,Rio de Janeiro,RJ,18-25,Pessoa jurídica
+148,Diego Ferreira,Curitiba,PR,36-45,Pessoa física
+149,Larissa Sousa,Salvador,BA,26-35,Pessoa jurídica
+150,  João Pereira ,Belo Horizonte,MG,56-65,Pessoa jurídica
+151,Ana Silva,Recife,PE,26-35,Pessoa jurídica
+152,Helena Borges,São Paulo,SP,65+,Pessoa física
+153,Carlos Neto,Salvador,BA,26-35,Pessoa física
+154,Daniela Ramos,São Paulo,SP,18-25,Pessoa física
+155,Fernanda Cruz,Belo Horizonte,MG,46-55,Pessoa física
+156,Rafael Cardoso,Recife,PE,65+,Pessoa jurídica
+157,Gabriela Lima,Curitiba,PR,65+,Pessoa física
+158,Beatriz Dias,São Paulo,SP,26-35,Pessoa jurídica
+159,Ursula Pinto,São Paulo,SP,36-45,Pessoa jurídica
+160,Felipe Oliveira  ,Belo Horizonte,MG,18-25,Pessoa física
+161,Julia Monteiro,Recife,PE,56-65,Pessoa jurídica
+162,Ulisses Brito,Fortaleza,CE,36-45,Pessoa jurídica
+163,Olivia Freitas,Curitiba,PR,18-25,Pessoa jurídica
+164,Beatriz Dias,Rio de Janeiro,RJ,56-65,Pessoa física
+165,  Lucas Souza ,Belo Horizonte,MG,65+,Pessoa jurídica
+166,Kleber Pires,Curitiba,PR,Não informado,Pessoa física
+167,Yuri Castro,São Paulo,SP,46-55,Pessoa jurídica
+168,Diego Ferreira,Fortaleza,CE,26-35,Pessoa física
+169,Marcos Andrade,São Paulo,SP,46-55,Pessoa jurídica
+170,Sara Teixeira,Rio de Janeiro,RJ,65+,Pessoa jurídica
+171,Ana Silva,São Paulo,SP,36-45,Pessoa física
+172,Ana Silva,Brasília,DF,65+,Pessoa jurídica
+173,Elena Santos,Brasília,DF,Não informado,Pessoa física
+174,Kleber Pires,Rio de Janeiro,RJ,56-65,Pessoa jurídica
+175,Ursula Pinto,São Paulo,SP,Não informado,Pessoa jurídica
+176,Paulo Ribeiro,Brasília,DF,56-65,Pessoa jurídica
+177,Olivia Freitas,Brasília,DF,26-35,Pessoa física
+178,Wesley Araujo,Belo Horizonte,MG,65+,Pessoa física
+179,Wilson Duarte,Fortaleza,CE,65+,Pessoa física
+180,  Roberta Leite ,São Paulo,SP,65+,Pessoa jurídica
+181,Eduardo Lopes,São Paulo,SP,65+,Pessoa jurídica
+182,Thiago Matos,São Paulo,SP,Não informado,Pessoa física
+183,Natalia Campos,Rio de Janeiro,RJ,56-65,Pessoa jurídica
+184,Carlos Neto,Rio de Janeiro,RJ,56-65,Pessoa física
+185,Carlos Neto,Fortaleza,CE,36-45,Pessoa física
+186,Carlos Neto,Brasília,DF,56-65,Pessoa física
+187,Roberta Leite,Salvador,BA,18-25,Pessoa jurídica
+188,Quezia Nunes,Brasília,DF,65+,Pessoa física
+189,Thiago Matos,Recife,PE,Não informado,Pessoa jurídica
+190,Patricia Vaz,São Paulo,SP,36-45,Pessoa física
+191,Patricia Vaz,Brasília,DF,46-55,Pessoa jurídica
+192,Ximena Godoi,São Paulo,SP,26-35,Pessoa física
+193,Gustavo Vieira,Recife,PE,56-65,Pessoa física
+194,João Pereira,Curitiba,PR,26-35,Pessoa física
+195,  Carlos Neto ,Fortaleza,CE,36-45,Pessoa jurídica
+196,Marina Barbosa,Recife,PE,65+,Pessoa jurídica
+197,Karen Alves,Brasília,DF,26-35,Pessoa física
+198,Julia Monteiro,Belo Horizonte,MG,65+,Pessoa física
+199,Beatriz Dias,Recife,PE,26-35,Pessoa jurídica
+200,Gustavo Vieira  ,São Paulo,SP,Não informado,Pessoa jurídica
+201,Tatiana Coelho,Belo Horizonte,MG,36-45,Pessoa física
+202,Wilson Duarte,Curitiba,PR,Não informado,Pessoa jurídica
+203,João Pereira,Rio de Janeiro,RJ,65+,Pessoa jurídica
+204,Paulo Ribeiro,Rio de Janeiro,RJ,65+,Pessoa jurídica
+205,Otavio Reis,Brasília,DF,Não informado,Pessoa física
+206,Paulo Ribeiro,São Paulo,SP,46-55,Pessoa física
+207,Helena Borges,Brasília,DF,56-65,Pessoa física
+208,Quezia Nunes,São Paulo,SP,18-25,Pessoa jurídica
+209,Ximena Godoi,Belo Horizonte,MG,65+,Pessoa jurídica
+210,  Ximena Godoi ,Fortaleza,CE,Não informado,Pessoa jurídica
+211,Carla Mendes,Salvador,BA,26-35,Pessoa física
+212,Gustavo Vieira,Brasília,DF,56-65,Pessoa jurídica
+213,Ximena Godoi,Recife,PE,65+,Pessoa jurídica
+214,Vanessa Cavalcanti,Salvador,BA,46-55,Pessoa jurídica
+215,Felipe Oliveira,Salvador,BA,46-55,Pessoa física
+216,Ursula Pinto,Recife,PE,18-25,Pessoa jurídica
+217,Karen Alves,Recife,PE,46-55,Pessoa jurídica
+218,Rafael Cardoso,Belo Horizonte,MG,18-25,Pessoa física
+219,Bruno Costa,Brasília,DF,56-65,Pessoa jurídica
+220,Xuxa Farias  ,Brasília,DF,56-65,Pessoa física
+221,Carlos Neto,Curitiba,PR,18-25,Pessoa física
+222,Henrique Rocha,Salvador,BA,65+,Pessoa física
+223,Ximena Godoi,Fortaleza,CE,65+,Pessoa jurídica
+224,Marina Barbosa,São Paulo,SP,26-35,Pessoa física
+225,  Roberta Leite ,Salvador,BA,36-45,Pessoa jurídica
+226,Karen Alves,Curitiba,PR,65+,Pessoa física
+227,Isabela Martins,Belo Horizonte,MG,46-55,Pessoa física
+228,Natalia Campos,Recife,PE,18-25,Pessoa jurídica
+229,Ximena Godoi,Fortaleza,CE,Não informado,Pessoa física
+230,Roberta Leite,Belo Horizonte,MG,36-45,Pessoa física
+231,Ximena Godoi,Belo Horizonte,MG,46-55,Pessoa física
+232,Ursula Pinto,São Paulo,SP,26-35,Pessoa jurídica
+233,Quezia Nunes,Belo Horizonte,MG,65+,Pessoa jurídica
+234,Larissa Sousa,Rio de Janeiro,RJ,26-35,Pessoa física
+235,Bruno Costa,Rio de Janeiro,RJ,18-25,Pessoa jurídica
+236,Fernanda Cruz,Recife,PE,56-65,Pessoa jurídica
+237,Thiago Matos,Brasília,DF,18-25,Pessoa física
+238,Marcos Andrade,Belo Horizonte,MG,36-45,Pessoa jurídica
+239,Wilson Duarte,Curitiba,PR,56-65,Pessoa física
+240,  João Pereira ,Belo Horizonte,MG,18-25,Pessoa jurídica
+241,Ursula Pinto,Fortaleza,CE,65+,Pessoa jurídica
+242,Fernanda Cruz,Curitiba,PR,46-55,Pessoa física
+243,Nicolas Cunha,Fortaleza,CE,36-45,Pessoa física
+244,Sara Teixeira,Recife,PE,18-25,Pessoa física
+245,Xuxa Farias,São Paulo,SP,46-55,Pessoa física
+246,Yuri Castro,Belo Horizonte,MG,46-55,Pessoa jurídica
+247,Gabriela Lima,Recife,PE,36-45,Pessoa jurídica
+248,Gustavo Vieira,Fortaleza,CE,18-25,Pessoa física
+249,João Pereira,Salvador,BA,56-65,Pessoa física
+250,Larissa Sousa,Brasília,DF,56-65,Pessoa jurídica
+251,Victor Gomes,Rio de Janeiro,RJ,18-25,Pessoa jurídica
+252,Marcos Andrade,Recife,PE,36-45,Pessoa física
+253,João Pereira,Rio de Janeiro,RJ,65+,Pessoa física
+254,Carlos Neto,Fortaleza,CE,46-55,Pessoa física
+255,  Vanessa Cavalcanti ,Fortaleza,CE,18-25,Pessoa física
+256,Helena Borges,Salvador,BA,36-45,Pessoa física
+257,Natalia Campos,Salvador,BA,26-35,Pessoa física
+258,Ximena Godoi,Salvador,BA,65+,Pessoa física
+259,Sara Teixeira,Belo Horizonte,MG,56-65,Pessoa jurídica
+260,Sara Teixeira  ,Fortaleza,CE,36-45,Pessoa física
+261,Nicolas Cunha,Curitiba,PR,56-65,Pessoa jurídica
+262,Paulo Ribeiro,Fortaleza,CE,65+,Pessoa física
+263,Gabriela Lima,Fortaleza,CE,26-35,Pessoa física
+264,Eduardo Lopes,São Paulo,SP,26-35,Pessoa jurídica
+265,Patricia Vaz,Belo Horizonte,MG,26-35,Pessoa física
+266,Carla Mendes,Salvador,BA,46-55,Pessoa jurídica
+267,Carla Mendes,Fortaleza,CE,36-45,Pessoa física
+268,Isabela Martins,Fortaleza,CE,56-65,Pessoa jurídica
+269,Patricia Vaz,Curitiba,PR,65+,Pessoa física
+270,  Lucas Souza ,São Paulo,SP,Não informado,Pessoa jurídica
+271,Lucas Souza,Fortaleza,CE,46-55,Pessoa jurídica
+272,Wilson Duarte,Brasília,DF,36-45,Pessoa jurídica
+273,Samuel Fonseca,Salvador,BA,18-25,Pessoa física
+274,Samuel Fonseca,Fortaleza,CE,65+,Pessoa jurídica
+275,João Pereira,Curitiba,PR,65+,Pessoa jurídica
+276,Wilson Duarte,São Paulo,SP,65+,Pessoa física
+277,Diego Ferreira,Fortaleza,CE,56-65,Pessoa física
+278,Henrique Rocha,Fortaleza,CE,26-35,Pessoa jurídica
+279,Isabela Martins,Salvador,BA,46-55,Pessoa jurídica
+280,Ulisses Brito  ,Rio de Janeiro,RJ,46-55,Pessoa jurídica
+281,Beatriz Dias,Fortaleza,CE,65+,Pessoa física
+282,Carla Mendes,Recife,PE,46-55,Pessoa física
+283,Xuxa Farias,Belo Horizonte,MG,46-55,Pessoa jurídica
+284,Patricia Vaz,Curitiba,PR,36-45,Pessoa física
+285,  Ana Silva ,Recife,PE,18-25,Pessoa jurídica
+286,Olivia Freitas,São Paulo,SP,46-55,Pessoa jurídica
+287,Carla Mendes,Curitiba,PR,65+,Pessoa jurídica
+288,Nicolas Cunha,Curitiba,PR,18-25,Pessoa física
+289,Vanessa Cavalcanti,Rio de Janeiro,RJ,46-55,Pessoa jurídica
+290,Isabela Martins,Brasília,DF,36-45,Pessoa física
+291,Paulo Ribeiro,Belo Horizonte,MG,26-35,Pessoa física
+292,Otavio Reis,Recife,PE,46-55,Pessoa jurídica
+293,Helena Borges,Fortaleza,CE,65+,Pessoa jurídica
+294,Paulo Ribeiro,Rio de Janeiro,RJ,26-35,Pessoa jurídica
+295,Julia Monteiro,São Paulo,SP,46-55,Pessoa física
+296,Carlos Neto,Recife,PE,Não informado,Pessoa física
+297,Roberta Leite,Curitiba,PR,56-65,Pessoa física
+298,Eduardo Lopes,São Paulo,SP,36-45,Pessoa jurídica
+299,Vanessa Cavalcanti,Curitiba,PR,46-55,Pessoa física
+300,  Julia Monteiro ,Brasília,DF,36-45,Pessoa jurídica
+401,Carlos Neto,Niterói,RJ,36-45,Pessoa jurídica
+301,Alexandre Bittencourt,Lisboa,EX,36-45,Pessoa jurídica
+302,Beatriz Falcão,Belo Horizonte,MG,26-35,Pessoa física
+303,Caio Serpa,Belo Horizonte,MG,36-45,Pessoa jurídica
+304,Débora Vasconcelos,Miami,EX,Não informado,Pessoa física
+305,Eduardo Mourão,Buenos Aires,EX,46-55,Pessoa jurídica
+306,Fabiana Restier,Porto Alegre,RS,46-55,Pessoa física
+307,Gustavo Peixoto,Nova York,EX,56-65,Pessoa jurídica
+308,Helena Quintela,Brasília,DF,36-45,Pessoa jurídica
+309,Igor Salgado,Brasília,DF,56-65,Pessoa jurídica
+310,Joana Villar,Porto Alegre,RS,36-45,Pessoa jurídica
+311,Kleber Andrade Neto,Curitiba,PR,26-35,Pessoa jurídica
+312,Larissa Monteverde,São Paulo,SP,26-35,Pessoa jurídica
+313,Marcelo Trindade,Rio de Janeiro,RJ,26-35,Pessoa física
+314,Natália Ferraz,Brasília,DF,46-55,Pessoa física
+315,Otávio Camargo,Nova York,EX,26-35,Pessoa jurídica
+316,Priscila Guimarães,Lisboa,EX,Não informado,Pessoa física
+317,Rodrigo Vasques,Rio de Janeiro,RJ,36-45,Pessoa física
+318,Sabrina Leitão,Brasília,DF,46-55,Pessoa física
+319,Thiago Bicalho,Belo Horizonte,MG,46-55,Pessoa jurídica
+320,Vivian Lacerda,Buenos Aires,EX,56-65,Pessoa jurídica
