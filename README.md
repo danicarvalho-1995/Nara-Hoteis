@@ -1,662 +1,383 @@
 # Nara Hotéis | Análise de Dados e Business Intelligence
 
-Projeto de análise de dados desenvolvido para a **Nara Hotéis**, com foco em organização, tratamento, validação e análise de dados relacionados a clientes, reservas, unidades hoteleiras, quartos, canais de venda e funcionários.
+Projeto de análise de dados aplicada à hotelaria, desenvolvido com Python, SQL, MySQL e Power BI, com foco no tratamento de bases de dados, na análise de desempenho operacional e na construção de dashboards para apoiar a tomada de decisão.
 
-O projeto foi estruturado como um fluxo completo de análise de dados, passando pela **modelagem e criação do banco de dados, tratamento das bases, exploração dos dados, consultas SQL, análise em Python, visualização em Power BI e apresentação dos resultados**.
-
-> **Autoria:** Daniel de Carvalho Nunes e Karoline Duffrayer
+**Autores:** Daniel de Carvalho Nunes e Karoline Duffrayer.
 
 ---
 
 ## Índice
 
-* [Sobre o projeto](#sobre-o-projeto)
-* [Objetivos](#objetivos)
-* [Processo de desenvolvimento](#processo-de-desenvolvimento)
-
-  * [1. Estruturação das bases](#1-estruturação-das-bases)
-  * [2. Tratamento e qualidade dos dados](#2-tratamento-e-qualidade-dos-dados)
-  * [3. Criação do banco de dados](#3-criação-do-banco-de-dados)
-  * [4. Consultas SQL](#4-consultas-sql)
-  * [5. Análise exploratória](#5-análise-exploratória)
-  * [6. Visualização dos dados](#6-visualização-dos-dados)
-  * [7. Relatório e apresentação](#7-relatório-e-apresentação)
-* [Estrutura do projeto](#estrutura-do-projeto)
-* [Descrição dos arquivos](#descrição-dos-arquivos)
-
-  * [Arquivos CSV](#arquivos-csv)
-  * [Arquivos SQL](#arquivos-sql)
-  * [Arquivos de análise](#arquivos-de-análise)
-  * [Relatórios e documentação](#relatórios-e-documentação)
-* [Tecnologias e ferramentas](#tecnologias-e-ferramentas)
-* [Fluxo de dados](#fluxo-de-dados)
-* [Resultados](#resultados)
-* [Como reproduzir o projeto](#como-reproduzir-o-projeto)
-* [Autores](#autores)
+1. [Sobre o projeto](#-sobre-o-projeto)
+2. [Objetivos](#-objetivos)
+3. [Tecnologias utilizadas](#-tecnologias-utilizadas)
+4. [Etapas de desenvolvimento](#-etapas-de-desenvolvimento)
+5. [Estrutura e arquivos do projeto](#-estrutura-e-arquivos-do-projeto)
+6. [Modelagem dos dados](#-modelagem-dos-dados)
+7. [Análise exploratória com Python](#-análise-exploratória-com-python)
+8. [Consultas SQL](#-consultas-sql)
+9. [Dashboard no Power BI](#-dashboard-no-power-bi)
+10. [Indicadores e análises](#-indicadores-e-análises)
+11. [Como executar o projeto](#-como-executar-o-projeto)
+12. [Resultados e aprendizados](#-resultados-e-aprendizados)
+13. [Limitações da análise](#-limitações-da-análise)
+14. [Autores](#-autores)
 
 ---
 
 ## Sobre o projeto
 
-O **Nara Hotéis** é um projeto de análise de dados desenvolvido a partir de diferentes bases relacionadas à operação de uma rede hoteleira.
+O Nara Hotéis é um projeto de análise de dados desenvolvido para explorar informações de uma rede hoteleira fictícia, transformando dados operacionais em informações que podem auxiliar na avaliação do desempenho das unidades e na identificação de oportunidades de melhoria.
 
-O trabalho busca transformar dados operacionais em informações estruturadas para apoiar a compreensão do negócio, permitindo analisar aspectos como:
+O projeto percorre diferentes etapas do processo analítico, desde a organização e preparação das bases até a exploração dos dados, a elaboração de consultas e a construção de visualizações interativas.
 
-* Perfil dos clientes;
-* Origem e características dos hóspedes;
-* Reservas realizadas;
-* Status das reservas;
-* Canais de venda;
-* Comissões;
-* Unidades hoteleiras;
-* Tipos de quartos;
-* Valores de diária;
-* Quantidade de hóspedes;
-* Avaliações;
-* Informações sobre funcionários;
-* Indicadores operacionais e financeiros.
+A solução utiliza Python para tratamento e análise exploratória, SQL e MySQL para consulta e organização dos dados e Power BI para desenvolver dashboards voltados à interpretação dos resultados.
 
-O projeto também contempla uma etapa de **qualidade e tratamento dos dados**, antes da utilização das informações nas análises.
-
----
+O trabalho foi estruturado como um projeto de portfólio, reunindo competências técnicas de análise de dados, manipulação de bases, consultas a bancos de dados, visualização e comunicação de resultados.
 
 ## Objetivos
 
-O projeto teve como principais objetivos:
+- Organizar e preparar bases de dados relacionadas à operação hoteleira.
+- Identificar inconsistências e realizar o tratamento dos dados.
+- Explorar informações sobre reservas, clientes, canais de aquisição e unidades.
+- Estruturar consultas SQL para investigar questões de negócio.
+- Desenvolver indicadores de desempenho operacional.
+- Criar dashboards interativos para comparar resultados por período, região e unidade.
+- Aplicar técnicas de análise de dados para transformar registros operacionais em informações relevantes para a gestão.
 
-1. Estruturar as bases de dados da Nara Hotéis;
-2. Identificar e tratar inconsistências;
-3. Criar um banco de dados relacional;
-4. Relacionar diferentes entidades por meio de chaves primárias e estrangeiras;
-5. Realizar consultas utilizando SQL;
-6. Explorar os dados utilizando Python;
-7. Produzir análises e indicadores relevantes para o negócio;
-8. Desenvolver visualizações e dashboards no Power BI;
-9. Consolidar os resultados em relatórios;
-10. Apresentar as principais informações de forma visual e objetiva.
+## Tecnologias utilizadas
 
----
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| Python | Manipulação, limpeza, validação e análise dos dados. |
+| Pandas | Organização de DataFrames, transformação de colunas e integração entre bases. |
+| Jupyter Notebook | Documentação e execução das etapas de análise. |
+| SQL | Consultas, filtros, agregações e investigação dos dados. |
+| MySQL | Armazenamento e consulta das informações em banco de dados relacional. |
+| Power BI | Modelagem analítica, criação de medidas e desenvolvimento de dashboards. |
+| DAX | Cálculo de indicadores e comparações temporais no Power BI. |
+| CSV | Intercâmbio de dados entre as etapas do projeto. |
+| Git e GitHub | Versionamento e documentação do projeto. |
 
-# Processo de desenvolvimento
+## Etapas de desenvolvimento
 
-O desenvolvimento foi organizado em diferentes etapas, seguindo um fluxo de análise de dados.
+O desenvolvimento foi organizado em etapas complementares, conectando a preparação dos dados à análise e à apresentação dos resultados.
 
-```text
-Bases de dados
-      ↓
-Tratamento e limpeza
-      ↓
-Validação da qualidade
-      ↓
-Modelagem do banco de dados
-      ↓
-SQL e consultas
-      ↓
-Análise exploratória
-      ↓
-Visualização
-      ↓
-Dashboard / Relatório
-      ↓
-Apresentação dos resultados
-```
+### 1. Organização e compreensão das bases
 
----
+A primeira etapa consistiu em identificar as bases disponíveis e compreender o significado dos campos de cada conjunto de dados.
 
-## 1. Estruturação das bases
+Foram consideradas informações relacionadas a:
 
-O primeiro passo consistiu na organização das diferentes fontes de dados utilizadas no projeto.
+- Reservas e períodos de hospedagem.
+- Clientes e características cadastrais.
+- Canais de aquisição de reservas.
+- Funcionários.
+- Unidades hoteleiras.
+- Tipos de quarto.
 
-As bases contemplam informações de:
+Essa etapa permitiu identificar as entidades do negócio, as chaves de relacionamento e as informações necessárias para responder às perguntas analíticas.
 
-* Clientes;
-* Canais de venda;
-* Funcionários;
-* Reservas;
-* Tipos de quarto;
-* Unidades hoteleiras.
+### 2. Tratamento e validação dos dados
 
-Além dos arquivos originais, o projeto possui versões tratadas das bases, permitindo separar os dados de origem dos dados preparados para análise.
+Com Python e Pandas, as bases foram preparadas para utilização nas etapas seguintes.
 
----
+O processo de preparação pode envolver:
 
-## 2. Tratamento e qualidade dos dados
+- Verificação dos nomes e tipos das colunas.
+- Conversão de campos numéricos e datas.
+- Identificação de valores ausentes e registros inconsistentes.
+- Conferência de identificadores e relacionamentos.
+- Verificação de duplicidades.
+- Padronização dos dados utilizados nas análises.
+- Exportação das bases preparadas para utilização em outras ferramentas.
 
-Antes da análise, os dados passaram por processos de tratamento e preparação.
+A finalidade dessa etapa é reduzir problemas de qualidade que possam comprometer os cálculos e as visualizações.
 
-Entre as atividades realizadas estão:
+### 3. Estruturação do banco de dados
 
-* Identificação de inconsistências;
-* Padronização de informações;
-* Tratamento de registros;
-* Organização dos campos;
-* Preparação das bases para integração;
-* Validação das informações;
-* Criação de bases limpas para utilização no banco de dados e nas análises.
+O projeto também contempla scripts SQL destinados à criação da estrutura do banco e à realização de consultas.
 
-Essa etapa é importante porque análises e indicadores dependem diretamente da qualidade dos dados utilizados.
+A organização relacional permite armazenar informações em tabelas separadas e relacioná-las por meio de identificadores, reduzindo a necessidade de concentrar todos os dados em uma única tabela.
 
-O repositório mantém tanto arquivos originais quanto versões tratadas, permitindo acompanhar a evolução dos dados durante o processo.
+Os scripts de criação e consulta documentam essa parte do trabalho e permitem investigar as informações diretamente no banco de dados.
 
----
+### 4. Análise exploratória com Python
 
-## 3. Criação do banco de dados
+Após a preparação das bases, o notebook de análise é utilizado para explorar os dados e compreender suas características.
 
-Após o tratamento, foi estruturado um banco de dados relacional utilizando **MySQL**.
+A análise exploratória permite examinar distribuições, frequências, valores ausentes, possíveis inconsistências e diferenças entre grupos.
 
-O arquivo `criacao.sql` contém os comandos necessários para criação do banco `narahoteis_db` e das principais tabelas do projeto.
+No contexto da hotelaria, essas investigações podem contribuir para compreender o comportamento das reservas, o perfil dos clientes, a distribuição das operações entre unidades e a avaliação dos hóspedes.
 
-Entre as tabelas estão:
+O notebook também funciona como registro do raciocínio analítico, permitindo acompanhar as transformações e os cálculos realizados durante o desenvolvimento.
 
-* `clientes`
-* `canais`
-* `unidades`
-* `funcionarios`
-* `quartos`
-* `reservas`
+### 5. Modelagem e construção do dashboard
 
-Também foram definidas relações entre as tabelas utilizando **chaves primárias e estrangeiras**.
+Com os dados preparados, o Power BI é utilizado para organizar as informações, estabelecer relacionamentos e construir indicadores.
 
-Por exemplo, a tabela `reservas` possui relacionamentos com clientes, unidades, tipos de quarto e canais de venda.
+Essa etapa envolve a definição dos campos utilizados nos filtros, a criação de medidas analíticas e a organização visual dos resultados.
 
-Essa estrutura permite integrar as diferentes fontes e realizar análises cruzadas entre as informações.
+O objetivo é permitir que o usuário explore o desempenho da operação por diferentes perspectivas, sem precisar consultar manualmente cada arquivo ou tabela.
 
----
+### 6. Consolidação e apresentação dos resultados
 
-## 4. Consultas SQL
+A etapa final reúne os resultados em relatórios e materiais de apresentação.
 
-A etapa de SQL foi utilizada para consultar e explorar os dados armazenados no banco.
+A combinação de tabelas, indicadores e visualizações facilita a comunicação dos resultados e permite demonstrar como as ferramentas de análise de dados podem ser utilizadas para apoiar decisões de negócio.
 
-O projeto contém arquivos destinados à criação e consulta da base:
+## Estrutura e arquivos do projeto
 
-* `criacao.sql`
-* `consultas.sql`
-* `nara_hoteis_criacao.sql`
-* `nara_hoteis_consulta.sql`
+O repositório reúne materiais referentes às diferentes etapas do desenvolvimento. Os principais arquivos identificados no projeto são:
 
-O arquivo de criação concentra a estrutura do banco e das tabelas, enquanto os arquivos de consulta são destinados à exploração das informações e obtenção de dados para análise.
+### Notebook Python
 
-> Algumas versões dos arquivos foram mantidas no repositório como parte do histórico de desenvolvimento do projeto.
+**`21.09NaraHoteis_Analise.ipynb`**
 
----
+Notebook destinado à execução e documentação das análises com Python. Reúne o ambiente de trabalho utilizado para explorar e manipular as bases de dados.
 
-## 5. Análise exploratória
+### Dashboard Power BI
 
-Após a organização dos dados, foi realizada uma etapa de **Análise Exploratória de Dados (EDA)** utilizando Python e Jupyter Notebook.
+**`Nara Hoteis.pbix`**
 
-O principal notebook do projeto é:
+Arquivo do Power BI que contém o relatório analítico, incluindo a organização das visualizações, os filtros, os relacionamentos e as medidas implementadas no modelo.
 
-```text
-21.09NaraHoteis_Analise.ipynb
-```
+### Scripts SQL
 
-O notebook possui mais de 14 mil linhas e aproximadamente 971 KB, concentrando etapas de preparação, exploração e análise dos dados.
+Os arquivos SQL documentam a criação da estrutura do banco e as consultas utilizadas no projeto:
 
-Nessa etapa, os dados podem ser analisados sob diferentes perspectivas, permitindo identificar padrões, comportamentos e relações entre as variáveis.
+- `criacao.sql` — script relacionado à criação da estrutura do banco.
+- `consultas.sql` — consultas utilizadas para explorar e analisar os dados.
+- `nara_hoteis_criacao.sql` — script adicional de criação do banco ou de suas tabelas.
+- `nara_hoteis_consulta.sql` — conjunto adicional de consultas SQL.
 
-Entre os possíveis eixos de análise estão:
+Os nomes indicam suas finalidades gerais. Para determinar diferenças exatas entre os scripts, é necessário consultar seu conteúdo individual.
 
-* Reservas por unidade;
-* Comportamento dos clientes;
-* Distribuição das reservas por canal;
-* Tipos de quarto;
-* Quantidade de hóspedes;
-* Valores de diária;
-* Avaliação dos hóspedes;
-* Distribuição geográfica;
-* Indicadores relacionados à operação hoteleira.
+### Bases de dados
 
----
+O projeto contém arquivos CSV relacionados às entidades do negócio, incluindo:
 
-## 6. Visualização dos dados
+- Clientes.
+- Canais.
+- Funcionários.
+- Reservas.
+- Tipos de quarto.
+- Unidades.
 
-Os resultados das análises foram transformados em visualizações para facilitar a interpretação das informações.
+Essas bases constituem a matéria-prima para as etapas de tratamento, modelagem e análise.
 
-O projeto possui um arquivo do **Power BI**:
+### Relatórios e materiais de apresentação
 
-```text
-Nara Hoteis.pbix
-```
+O repositório também reúne arquivos complementares, incluindo documentos, apresentações e versões em HTML relacionadas ao desenvolvimento ou à apresentação do projeto.
 
-O dashboard foi desenvolvido para transformar os dados tratados em indicadores e visualizações capazes de apresentar o desempenho da operação de maneira mais acessível.
+Esses materiais apoiam a documentação das análises e a comunicação dos resultados.
 
-A utilização do Power BI permite explorar os dados de forma interativa e cruzar diferentes dimensões do negócio.
+> Observação: a listagem acima descreve os arquivos identificados durante a documentação do projeto. Para consultar a relação completa e atualizada dos arquivos e diretórios, acesse a [estrutura do repositório no GitHub](https://github.com/danicarvalho-1995/Nara-Hoteis/tree/main).
 
----
+## Modelagem dos dados
 
-## 7. Relatório e apresentação
+A análise considera entidades relacionadas à operação hoteleira, com destaque para a tabela de reservas e as tabelas cadastrais que complementam suas informações.
 
-Além do dashboard, o projeto conta com diferentes formatos de documentação e apresentação dos resultados.
+### Principais entidades
 
-Foram produzidos:
+| Entidade | Informações disponíveis |
+|---|---|
+| Reservas | Identificadores, unidade, cliente, canal, datas de check-in e check-out, quantidade de diárias, hóspedes, avaliação, status e forma de pagamento. |
+| Clientes | Identificador, nome, cidade e estado de origem, faixa etária e tipo de cliente. |
+| Canais | Identificador, nome do canal e percentual de comissão. |
+| Funcionários | Informações cadastrais dos funcionários. |
+| Unidades | Identificador, nome, cidade, região, categoria e total de quartos. |
+| Tipos de quarto | Identificadores dos tipos de quarto e informações associadas à categoria de acomodação. |
 
-* Relatórios em HTML;
-* Documentação em DOCX;
-* Apresentação em PowerPoint;
-* Dashboard em Power BI;
-* Notebook com a análise em Python.
+A tabela de reservas concentra os registros operacionais, enquanto as demais entidades fornecem informações complementares para segmentação e comparação.
 
-Dessa forma, o projeto não se limita à análise técnica dos dados, mas também contempla a etapa de **comunicação dos resultados**.
+Os relacionamentos devem utilizar identificadores compatíveis entre as tabelas, respeitando a cardinalidade e a integridade dos dados.
 
----
+## Análise exploratória com Python
 
-# Estrutura do projeto
+Python foi utilizado como ferramenta de manipulação e investigação das bases.
 
-A estrutura atual do repositório é composta por arquivos de dados, scripts, análises e materiais de apresentação:
+A biblioteca Pandas permite executar operações como seleção de colunas, conversão de tipos, filtragem de registros, junção entre tabelas e cálculo de estatísticas descritivas.
 
-```text
-Nara-Hoteis/
-│
-├── 21.09NaraHoteis_Analise.ipynb
-├── 21_09NaraHoteis_Relatorio_Final (1).html
-├── Nara Hoteis.pbix
-├── Nara Hotéis_23.09.pptx
-├── NaraHoteis_Relatorio_Final.html
-│
-├── nara_hoteis_Documentacao.docx
-│
-├── criacao.sql
-├── consultas.sql
-├── nara_hoteis_criacao.sql
-├── nara_hoteis_consulta.sql
-│
-├── canais_venda.csv
-├── canaislimpo.csv
-│
-├── clientes.csv
-├── clientes_novos.csv
-├── clienteslimpo.csv
-│
-├── funcionarios.csv
-├── funcionarios_novos.csv
-├── funcionarioslimpo.csv
-│
-├── reservas.csv
-├── reservas_novas.csv
-├── reservaslimpo.csv
-│
-├── tipos_quarto.csv
-├── tipos_quarto_novos.csv
-│
-├── unidades.csv
-├── unidades_novos.csv
-├── unidadeslimpo.csv
-│
-├── quartoslimpo.csv
-│
-└── README.md
-```
+Entre as análises pertinentes ao conjunto de dados estão:
 
-A estrutura acima corresponde aos arquivos atualmente disponibilizados no repositório.
+- Distribuição das reservas por unidade e região.
+- Frequência dos diferentes status de reserva.
+- Quantidade de hóspedes e diárias.
+- Distribuição dos clientes por faixa etária e origem.
+- Participação dos canais de aquisição.
+- Distribuição e consistência das avaliações.
+- Identificação de registros ausentes ou inconsistentes.
 
----
+A exploração dos dados ajuda a orientar a criação dos indicadores e a identificar limitações que precisam ser consideradas antes da interpretação dos resultados.
 
-# Descrição dos arquivos
+## Consultas SQL
 
-## Arquivos CSV
+As consultas SQL permitem investigar os dados diretamente no banco relacional.
 
-Os arquivos CSV representam as diferentes bases utilizadas no projeto.
+Entre as operações aplicáveis ao projeto estão:
 
-### Clientes
+- Seleção de registros com `SELECT`.
+- Filtragem com `WHERE`.
+- Agregação com `GROUP BY`.
+- Ordenação com `ORDER BY`.
+- Junção de tabelas com `JOIN`.
+- Cálculo de frequências e totais.
+- Comparação de resultados entre unidades, regiões e canais.
 
-```text
-clientes.csv
-clientes_novos.csv
-clienteslimpo.csv
-```
+As consultas complementam a análise realizada em Python e permitem demonstrar conhecimentos de manipulação de dados em bancos relacionais.
 
-Contêm informações relacionadas aos clientes, incluindo identificadores, nome, cidade de origem, faixa etária e tipo de cliente.
+## Dashboard no Power BI
 
-As diferentes versões representam etapas distintas da preparação dos dados.
+O dashboard foi concebido para apresentar informações operacionais da rede hoteleira de forma visual e interativa.
 
----
+A utilização de filtros permite segmentar os dados e investigar diferenças entre unidades, regiões e períodos.
 
-### Canais de venda
+### Perspectivas de análise
 
-```text
-canais_venda.csv
-canaislimpo.csv
-```
+**Visão geral**
 
-Contêm informações relacionadas aos canais utilizados para realização das reservas e suas respectivas características.
+Concentra os indicadores de desempenho e oferece uma visão resumida da operação.
 
-Entre as informações utilizadas está a comissão percentual associada ao canal.
+**Desempenho regional**
 
----
+Permite comparar as unidades por região e identificar diferenças na distribuição das reservas, dos hóspedes e das diárias.
 
-### Funcionários
+**Desempenho por unidade**
 
-```text
-funcionarios.csv
-funcionarios_novos.csv
-funcionarioslimpo.csv
-```
+Possibilita analisar individualmente as unidades hoteleiras e comparar seus resultados operacionais.
 
-Bases relacionadas aos funcionários das unidades hoteleiras.
+**Diagnóstico operacional**
 
-Podem ser utilizadas para análises envolvendo:
+Reúne perspectivas que ajudam a investigar o comportamento das reservas, a qualidade das avaliações e as diferenças entre grupos de clientes ou canais.
 
-* Cargo;
-* Departamento;
-* Salário;
-* Data de admissão;
-* Unidade de trabalho.
+A implementação de cada página e de cada indicador deve ser consultada diretamente no arquivo `.pbix`.
 
----
+## Indicadores e análises
 
-### Reservas
+Os dados disponíveis permitem trabalhar com indicadores operacionais como:
 
-```text
-reservas.csv
-reservas_novas.csv
-reservaslimpo.csv
-```
+| Indicador | Objetivo |
+|---|---|
+| Total de reservas | Quantificar os registros de reservas segundo os critérios definidos. |
+| Total de hóspedes | Avaliar a quantidade de hóspedes associada às reservas consideradas. |
+| Total de diárias | Medir o volume de diárias registrado nas bases. |
+| Avaliação média | Examinar a avaliação dos hóspedes com registros válidos. |
+| Taxa de avaliação | Medir a proporção de reservas avaliadas, conforme a regra de negócio adotada. |
+| Comparação mensal | Avaliar a variação dos indicadores entre períodos mensais. |
+| Comparação anual | Comparar resultados com o mesmo período do ano anterior, quando houver dados suficientes. |
+| Distribuição regional | Comparar a participação das regiões nos indicadores operacionais. |
 
-Representam uma das principais bases do projeto.
+Os cálculos precisam respeitar a definição de cada indicador, os filtros aplicados e a qualidade dos dados de origem.
 
-As informações estão relacionadas às reservas realizadas, incluindo:
+Por exemplo, o total de reservas pode exigir a contagem distinta dos identificadores de reserva, enquanto a taxa de avaliação depende da definição de quais registros são elegíveis para avaliação.
 
-* Cliente;
-* Unidade;
-* Tipo de quarto;
-* Canal;
-* Check-in;
-* Check-out;
-* Quantidade de diárias;
-* Número de hóspedes;
-* Avaliação;
-* Status;
-* Forma de pagamento.
+## Como executar o projeto
 
----
+### Pré-requisitos
 
-### Tipos de quarto
+Para reproduzir as principais etapas, recomenda-se ter instalado:
 
-```text
-tipos_quarto.csv
-tipos_quarto_novos.csv
-quartoslimpo.csv
-```
+- Git.
+- Python 3.
+- Jupyter Notebook ou JupyterLab.
+- Pandas.
+- MySQL Server e um cliente SQL.
+- Power BI Desktop, para abrir e editar o dashboard.
 
-Bases relacionadas aos tipos de quartos disponíveis.
-
-Entre as informações utilizadas estão a descrição do quarto, capacidade máxima e valor da diária-base.
-
----
-
-### Unidades
-
-```text
-unidades.csv
-unidades_novos.csv
-unidadeslimpo.csv
-```
-
-Contêm informações sobre as unidades da rede hoteleira, como:
-
-* Nome da unidade;
-* Cidade;
-* Região;
-* Categoria do hotel;
-* Quantidade total de quartos.
-
----
-
-# Arquivos SQL
-
-## `criacao.sql`
-
-Script responsável pela criação do banco de dados e das principais tabelas.
-
-O arquivo também contém comandos relacionados à importação dos dados tratados para o banco MySQL.
-
----
-
-## `consultas.sql`
-
-Arquivo destinado às consultas SQL utilizadas durante o projeto.
-
-> A versão atualmente publicada no repositório está vazia, portanto, não deve ser considerada a principal fonte das consultas realizadas.
-
----
-
-## `nara_hoteis_criacao.sql`
-
-Versão adicional do script de criação do banco de dados utilizada durante o desenvolvimento do projeto.
-
----
-
-## `nara_hoteis_consulta.sql`
-
-Arquivo complementar destinado às consultas SQL específicas do projeto.
-
----
-
-# Arquivos de análise
-
-## `21.09NaraHoteis_Analise.ipynb`
-
-Notebook principal de análise exploratória.
-
-É utilizado para trabalhar com os dados de forma programática, permitindo executar etapas de tratamento, transformação, exploração e análise.
-
-O notebook foi desenvolvido em **Jupyter Notebook**, utilizando Python para manipulação e análise dos dados.
-
----
-
-# Relatórios e documentação
-
-## `NaraHoteis_Relatorio_Final.html`
-
-Relatório final em formato HTML, utilizado para consolidar os resultados da análise.
-
-## `21_09NaraHoteis_Relatorio_Final (1).html`
-
-Outra versão do relatório final disponibilizada no repositório.
-
-## `nara_hoteis_Documentacao.docx`
-
-Documento de documentação do projeto, utilizado para registrar informações e etapas relacionadas ao desenvolvimento.
-
----
-
-# Dashboard
-
-## `Nara Hoteis.pbix`
-
-Arquivo do **Microsoft Power BI** utilizado para construção do dashboard.
-
-O arquivo concentra as visualizações desenvolvidas para apresentar os principais indicadores e análises do projeto.
-
----
-
-# Apresentação
-
-## `Nara Hotéis_23.09.pptx`
-
-Apresentação em PowerPoint utilizada para comunicar os resultados do projeto.
-
-O objetivo dessa etapa é transformar os resultados técnicos da análise em uma apresentação mais objetiva para públicos interessados nas informações de negócio.
-
----
-
-# Tecnologias e ferramentas
-
-O projeto utiliza diferentes ferramentas ao longo do processo:
-
-| Tecnologia / Ferramenta | Utilização                              |
-| ----------------------- | --------------------------------------- |
-| **Python**              | Tratamento e análise dos dados          |
-| **Jupyter Notebook**    | Desenvolvimento da análise exploratória |
-| **Pandas**              | Manipulação e transformação dos dados   |
-| **SQL**                 | Consultas e estruturação do banco       |
-| **MySQL**               | Banco de dados relacional               |
-| **Power BI**            | Dashboard e visualização                |
-| **HTML**                | Relatórios                              |
-| **Microsoft Word**      | Documentação                            |
-| **PowerPoint**          | Apresentação dos resultados             |
-| **CSV**                 | Armazenamento e intercâmbio das bases   |
-
----
-
-# Fluxo de dados
-
-O projeto pode ser representado pelo seguinte fluxo:
-
-```text
-                 ┌─────────────────────┐
-                 │    Bases originais  │
-                 │       CSV           │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │ Tratamento e        │
-                 │ limpeza dos dados   │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │ Bases tratadas      │
-                 │       CSV           │
-                 └──────────┬──────────┘
-                            │
-                 ┌──────────┴──────────┐
-                 ▼                     ▼
-       ┌─────────────────┐    ┌─────────────────┐
-       │     MySQL       │    │ Python / EDA   │
-       │                 │    │ Jupyter        │
-       └────────┬────────┘    └────────┬────────┘
-                │                      │
-                └──────────┬───────────┘
-                           ▼
-                 ┌─────────────────────┐
-                 │ Análise dos dados   │
-                 └──────────┬──────────┘
-                            │
-              ┌─────────────┴─────────────┐
-              ▼                           ▼
-     ┌─────────────────┐         ┌─────────────────┐
-     │    Power BI     │         │     Relatório   │
-     │    Dashboard    │         │   e apresentação│
-     └─────────────────┘         └─────────────────┘
-```
-
----
-
-# Resultados
-
-O projeto demonstra um fluxo completo de trabalho em análise de dados, desde a preparação das bases até a apresentação dos resultados.
-
-Entre as principais competências aplicadas estão:
-
-* Tratamento e limpeza de dados;
-* Análise exploratória;
-* Validação e organização de bases;
-* Modelagem de dados;
-* SQL;
-* Banco de dados relacional;
-* Python;
-* Pandas;
-* Jupyter Notebook;
-* Power BI;
-* Criação de indicadores;
-* Visualização de dados;
-* Produção de relatórios;
-* Comunicação de resultados.
-
-O projeto também demonstra a integração entre diferentes ferramentas e etapas do processo analítico, evitando que a análise seja tratada apenas como uma etapa isolada.
-
----
-
-# Como reproduzir o projeto
-
-Para reproduzir as principais etapas do projeto, recomenda-se seguir a ordem:
-
-### 1. Obter o repositório
+### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/danicarvalho-1995/Nara-Hoteis.git
+cd Nara-Hoteis
 ```
 
 ### 2. Preparar o ambiente Python
 
-Instale Python e Jupyter Notebook ou JupyterLab.
-
-As principais bibliotecas utilizadas na análise incluem:
+Crie um ambiente virtual:
 
 ```bash
-pip install pandas
+python -m venv .venv
 ```
 
-Outras dependências podem ser instaladas conforme as bibliotecas utilizadas no notebook.
+No Windows, ative o ambiente com:
 
-### 3. Preparar o MySQL
-
-Instale o MySQL e execute o script:
-
-```text
-criacao.sql
+```bash
+.venv\Scripts\activate
 ```
 
-ou a versão correspondente:
+Instale as bibliotecas necessárias conforme as dependências utilizadas no notebook:
 
-```text
-nara_hoteis_criacao.sql
+```bash
+pip install pandas jupyter jinja2
 ```
 
-### 4. Carregar os dados tratados
+A biblioteca `jinja2` também pode ser necessária para renderizar visualizações formatadas com `DataFrame.style` no Pandas.
 
-Utilize as bases `*limpo.csv` para alimentar as tabelas correspondentes.
+### 3. Executar o notebook
 
-> **Observação:** alguns comandos de importação presentes no script SQL utilizam caminhos locais de arquivo. Esses caminhos precisam ser alterados de acordo com o ambiente em que o projeto for executado.
+Inicie o Jupyter:
 
-### 5. Executar as análises
-
-Abra:
-
-```text
-21.09NaraHoteis_Analise.ipynb
+```bash
+jupyter notebook
 ```
 
-e execute as células do notebook seguindo a ordem apresentada.
+Abra o arquivo `21.09NaraHoteis_Analise.ipynb` e execute as células na ordem apresentada.
 
-### 6. Visualizar o dashboard
+Os caminhos dos arquivos de entrada e saída devem corresponder à organização das bases no ambiente local.
 
-Abra:
+### 4. Configurar o MySQL
 
-```text
-Nara Hoteis.pbix
-```
+Instale e inicie o MySQL Server. Em seguida, examine os scripts de criação disponíveis no repositório e execute o script correspondente à estrutura do banco.
 
-utilizando o Microsoft Power BI Desktop.
+Depois da criação das tabelas, carregue os dados conforme o formato e a ordem exigidos pelos scripts.
+
+Execute as consultas SQL para verificar os registros e reproduzir as análises disponíveis.
+
+As credenciais e os parâmetros de conexão devem ser configurados no ambiente local, sem publicar senhas ou outros dados sensíveis no repositório.
+
+### 5. Abrir o Power BI
+
+Abra o arquivo `Nara Hoteis.pbix` no Power BI Desktop.
+
+Caso o relatório utilize caminhos locais ou conexões externas, atualize as configurações de origem dos dados antes de executar a atualização.
+
+Confira os relacionamentos, os tipos de dados, as medidas e os filtros para garantir que os indicadores sejam calculados corretamente.
+
+## Resultados e aprendizados
+
+O projeto reúne etapas importantes do trabalho de um profissional de análise de dados:
+
+- Preparação, limpeza e validação de bases.
+- Manipulação de dados com Python e Pandas.
+- Exploração de dados por meio de estatísticas descritivas.
+- Consulta e organização de informações com SQL e MySQL.
+- Estruturação de relacionamentos entre entidades.
+- Criação de indicadores e medidas no Power BI.
+- Construção de visualizações para análise de desempenho.
+- Documentação de processos e apresentação de resultados.
+
+A integração dessas etapas demonstra a aplicação de diferentes ferramentas em um fluxo de trabalho analítico, desde os dados de origem até sua utilização em relatórios para apoiar decisões.
+
+## Limitações da análise
+
+Os resultados dependem da cobertura, da consistência e da granularidade das bases disponíveis.
+
+Em particular, a existência de campos como quantidade de diárias, status de reserva, avaliação e comissão não significa que todos os indicadores financeiros possam ser calculados.
+
+Para calcular receita efetiva, diária média ou RevPAR, é necessário dispor de dados financeiros e operacionais adequados, como valores efetivamente cobrados, receita de hospedagem e disponibilidade de quartos no período.
+
+Esses indicadores não devem ser inferidos apenas a partir da quantidade de reservas ou de tarifas-base, sem validar as regras de negócio e os dados necessários.
+
+Da mesma forma, comparações mensais e anuais exigem cobertura temporal suficiente e critérios consistentes para definir quais reservas entram em cada período.
+
+## Autores
+
+**Daniel de Carvalho Nunes** e **Karoline Duffrayer**
+
+Projeto desenvolvido com o objetivo de aplicar conhecimentos de análise de dados, SQL, Python e Business Intelligence a um cenário de gestão hoteleira.
 
 ---
 
-# Autores
+**Repositório:** [github.com/danicarvalho-1995/Nara-Hoteis](https://github.com/danicarvalho-1995/Nara-Hoteis)
 
-## Daniel de Carvalho Nunes
-
-Responsável pelo desenvolvimento do projeto em conjunto com Karoline Duffrayer, participando das etapas de tratamento, análise, visualização e documentação dos dados.
-
-## Karoline Duffrayer
-
-Responsável pelo desenvolvimento do projeto em conjunto com Daniel de Carvalho Nunes, participando das etapas de preparação, estruturação, análise e documentação dos dados.
-
----
-
-## Autoria
-
-**Nara Hotéis — Projeto de Análise de Dados**
-
-**Daniel de Carvalho Nunes & Karoline Duffrayer**
-
----
-
-## Repositório
-
-O código, bases, análises, relatórios e materiais do projeto estão disponíveis no GitHub:
-
-**Nara Hotéis — GitHub**
-
-https://github.com/danicarvalho-1995/Nara-Hoteis
